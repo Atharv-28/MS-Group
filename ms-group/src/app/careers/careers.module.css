@@ -1,0 +1,171 @@
+.careers {
+  padding: 6rem 0;
+  background: var(--color-off-white, #f8f9fc);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-red, #c0392b);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-navy, #0a1628);
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background: var(--color-red, #c0392b);
+  margin: 1.25rem auto;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary, #4a5268);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Job List */
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.jobCard {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-200, #e2e6ed);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.2s ease;
+}
+
+.jobCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(10,22,40,0.06);
+  border-color: transparent;
+}
+
+.jobInfo {}
+
+.jobTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-navy, #0a1628);
+  margin-bottom: 0.875rem;
+}
+
+.jobMeta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary, #4a5268);
+}
+
+.metaIcon {
+  font-size: 1rem;
+}
+
+.applyBtn {
+  flex-shrink: 0;
+  padding: 0.875rem 1.75rem;
+  background: transparent;
+  color: var(--color-red, #c0392b);
+  border: 2px solid var(--color-red, #c0392b);
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.jobCard:hover .applyBtn,
+.applyBtn:hover {
+  background: var(--color-red, #c0392b);
+  color: #ffffff;
+}
+
+.bottomCTA {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(192,57,43,0.05);
+  border-radius: 8px;
+  border: 1px dashed rgba(192,57,43,0.3);
+}
+
+.bottomTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-navy, #0a1628);
+  margin-bottom: 0.5rem;
+}
+
+.bottomDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary, #4a5268);
+  margin-bottom: 1.5rem;
+}
+
+.bottomBtn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: var(--color-navy, #0a1628);
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.2s ease;
+}
+
+.bottomBtn:hover {
+  background: var(--color-red, #c0392b);
+}
+
+@media (max-width: 600px) {
+  .jobCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .jobAction, .applyBtn {
+    width: 100%;
+  }
+}

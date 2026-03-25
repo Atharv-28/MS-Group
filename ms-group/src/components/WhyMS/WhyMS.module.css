@@ -1,0 +1,85 @@
+.why {
+  padding: 6rem 0;
+  background: var(--color-off-white, #f8f9fc);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pillar {
+  padding: 2.5rem 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid var(--color-gray-200, #e2e6ed);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.pillar:hover {
+  box-shadow: 0 12px 36px rgba(10,22,40,0.1);
+  transform: translateY(-4px);
+  border-color: transparent;
+}
+
+.pillarIcon {
+  width: 64px;
+  height: 64px;
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent-gold, #c9a84c);
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.pillar:hover .pillarIcon {
+  background: var(--color-accent-gold, #c9a84c);
+  color: var(--color-navy, #0a1628);
+  border-color: transparent;
+}
+
+.pillarTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-navy, #0a1628);
+  margin-bottom: 0.875rem;
+}
+
+.pillarDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary, #4a5268);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .pillars {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .pillars {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+
+  .pillar:last-child {
+    grid-column: 1 / -1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
