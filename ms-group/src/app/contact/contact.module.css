@@ -3,6 +3,12 @@
   background: var(--color-off-white, #f8f9fc);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 2rem;
