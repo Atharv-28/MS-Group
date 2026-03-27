@@ -29,13 +29,9 @@ export default function About() {
             </h2>
             <div className={styles.divider}></div>
             <p className={styles.text}>
-              Founded on principles of precision and innovation, MS Group underwent
-              a pivotal reorganization in 2020 at our headquarters in HSR Layout, Bangalore.
-            </p>
-            <p className={styles.text}>
-              Today, we operate as a unified powerhouse, bridging the gap between
-              local operational excellence and global strategic reach for enterprises
-              worldwide.
+              Established in 2020 (following a strategic reorganization of operations that originally began in 2007),
+              MS Group is headquartered in HSR Layout, Bangalore. Founded by Mr. M. Puri, an alumnus of the Rochester Institute of Technology,
+              our firm bridges the gap between local operational excellence and global strategic reach.
             </p>
 
             {/* Feature list */}

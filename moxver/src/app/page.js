@@ -12,114 +12,49 @@ export default function MoxverPage() {
       <InternalHero
         badge="Technology Solutions"
         badgeColor="red"
-        title="MOXVER:<br/><em>Architecting Digital Futures.</em>"
-        subtitle="Pioneering enterprise technology—from scalable cloud infrastructure to disruptive AI—designed to accelerate your competitive edge."
+        title="MOXVER: <br/><em>Driving Digital Transformation.</em>"
+        subtitle="Empowering your business with custom web design, targeted digital marketing, and specialized software solutions designed for the modern enterprise."
         bgImage=""
-        ctaText="Discover Our Tech"
+        ctaText="Accelerate Your Digital Journey"
         ctaLink="/contact"
       />
 
+      {/* Mission Statement */}
       <InfoSection
         theme="light"
-        imageLeft={true}
-        badge="Digital Evolution"
-        title="Software Designed for the Modern Enterprise."
-        subtitle="We build robust digital ecosystems that scale with your ambitions."
+        badge="Our Mission"
+        title="Innovating Operations. Elevating Experiences."
         description={[
-          "MOXVER is the technology engine behind MS Group's most transformative projects. We fuse deep engineering expertise with modern design thinking to build platforms that perform flawlessly under pressure.",
-          "Whether migrating legacy systems to the cloud or deploying cutting-edge machine learning models, our solutions are engineered for resilience and security."
+          "To accelerate digital transformation by providing innovative, custom-built technology solutions that streamline operations, elevate brand presence, and drive business efficiency."
         ]}
         imageSrc=""
-        imageAlt="Modern Technology"
-        features={[
-          { title: 'Enterprise Architecture', description: 'Designing modular, microservices-based systems that grow without technical debt.' },
-          { title: 'Artificial Intelligence', description: 'Custom-trained predictive models and automation tools that optimize daily operations.' },
-          { title: 'Cloud Infrastructure', description: 'Secure, high-availability hosting and deployment across AWS, Azure, and Google Cloud.' }
-        ]}
+        imageAlt="Moxver Mission"
+        features={[]}
       />
 
+      {/* Core Services */}
       <InfoSection
         theme="dark"
-        badge="Performance"
-        title="Security & Scale out of the Box"
+        imageLeft={true}
+        badge="Core Services"
+        title="Designed for the Modern Enterprise."
         description={[
-          "We treat security and performance as fundamental requirements, not afterthoughts.",
-          "Our tech stack is meticulously curated to guarantee uptime, protect sensitive data, and provide lightning-fast user experiences for millions of concurrent users."
+          "We build robust digital ecosystems that scale with your ambitions."
         ]}
         imageSrc=""
-        imageAlt="Server Infrastructure"
+        imageAlt="Technology Services"
         features={[
-          { title: 'Zero-Trust Security', description: 'Military-grade encryption and rigorous compliance frameworks implemented from day one.' },
-          { title: 'Continuous Integration', description: 'Automated testing and deployment pipelines for daily, risk-free feature updates.' },
-          { title: '40% Cost Reduction', description: 'Optimizing resource allocation through serverless computing and intelligent scaling.' }
+          { title: 'Digital Experience & Growth', description: 'Web Architecture & Design, Strategic Digital Marketing (SEO, performance marketing).' },
+          { title: 'Specialized Enterprise Software', description: 'HR Tech Solutions, Hospitality Management Systems, Next-Gen CRM Solutions.' },
+          { title: 'Resilience & Security', description: 'Cybersecurity & Threat Mitigation, Cloud Infrastructure & Migration.' },
+          { title: 'The Innovation Edge', description: 'Custom AI & Automation, E-commerce Ecosystems.' }
         ]}
       />
-    </>
-  );
-}
-import Image from "next/image";
-import styles from "./page.module.css";
 
-export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      <div style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f0f4f8' }}>
+        <h2>Ready to Accelerate Your Digital Transformation?</h2>
+        <a href="/contact" style={{ display: 'inline-block', marginTop: '1rem', padding: '0.75rem 1.5rem', backgroundColor: '#0056b3', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontWeight: 'bold' }}>Accelerate Your Digital Journey</a>
+      </div>
+    </>
   );
 }

@@ -12,48 +12,62 @@ export default function ClientwisePage() {
       <InternalHero
         badge="Strategic Consulting"
         badgeColor="blue"
-        title="CLIENTWISE:<br/><em>Navigating Complexity. Driving Growth.</em>"
-        subtitle="We provide precision-engineered strategic business consulting designed to help enterprises navigate complex market dynamics and scale operations globally."
+        title="CLIENTWISE: <br/><em>Strategic Consulting & Precision Auditing.</em>"
+        subtitle="Empowering your organization with actionable insights, optimized processes, and robust compliance frameworks to drive sustainable market leadership."
         bgImage=""
-        ctaText="Partner With Us"
+        ctaText="Schedule a Consultation"
         ctaLink="/contact"
+      />
+
+      {/* Mission Statement */}
+      <InfoSection
+        theme="light"
+        badge="Our Mission"
+        title="Navigating Complexity. Architecting Growth."
+        description={[
+          "To empower organizations with strategic insights and actionable solutions that drive sustainable growth, operational excellence, and a competitive edge in the global market."
+        ]}
+        imageSrc=""
+        imageAlt="Consulting Mission"
+        features={[]}
+      />
+
+      {/* Core Services */}
+      <InfoSection
+        theme="dark"
+        imageLeft={true}
+        badge="Core Services"
+        title="Strategic Consulting & Business Auditing."
+        description={[
+          "Our multi-disciplinary teams bring decades of experience to restructure and scale your business for the modern economy."
+        ]}
+        imageSrc=""
+        imageAlt="Consulting Services"
+        features={[
+          { title: 'Strategic Business Consulting', description: 'Corporate Strategy & Growth Planning, Operational Excellence, and Change Management & Transformation.' },
+          { title: 'Comprehensive Business Auditing', description: 'Financial & Process Auditing, Risk Management & Mitigation, and Regulatory Compliance.' }
+        ]}
       />
 
       <InfoSection
         theme="light"
-        imageLeft={true}
-        badge="Business Strategy"
-        title="Transforming Vision Into Execution."
-        subtitle="Bridging the gap between conceptual strategy and operational reality."
-        description={[
-          "CLIENTWISE operates at the intersection of industry foresight and financial pragmatism. We partner with leadership teams to identify untapped market opportunities and eliminate operational inefficiencies.",
-          "Our multi-disciplinary teams bring decades of experience across finance, technology, and global markets to restructure and scale your business for the modern economy."
-        ]}
-        imageSrc=""
-        imageAlt="Consulting Meeting"
-        features={[
-          { title: 'Market Entry Strategy', description: 'Comprehensive risk assessment and go-to-market planning for international expansion.' },
-          { title: 'Operational Restructuring', description: 'Streamlining processes and organizational design to improve margin performance.' },
-          { title: 'Mergers & Acquisitions', description: 'End-to-end guidance from target identification through post-merger integration.' }
-        ]}
-      />
-
-      <InfoSection
-        theme="dark"
         badge="The Edge"
-        title="Strategic Depth. Tangible Results."
+        title="Why Partner With CLIENTWISE"
         description={[
-          "We don't deal in theoretical frameworks. We deliver actionable blueprints.",
-          "Our advisory services are trusted by Fortune 500 companies and agile startups alike, providing the strategic depth required to build resilient, future-ready global enterprises."
+          "We don't deal in theoretical frameworks. We deliver actionable blueprints."
         ]}
         imageSrc=""
         imageAlt="Business Analytics"
         features={[
-          { title: '60% Faster Expansion', description: 'Our clients enter new markets with unprecedented speed.' },
           { title: 'Data-Driven Insights', description: 'Proprietary analytical models that remove the guesswork from leadership decisions.' },
-          { title: 'Change Management', description: 'Ensuring your workforce adapts alongside your evolving business model.' }
+          { title: 'Holistic Perspective', description: 'Comprehensive risk assessment and strategy across the entire enterprise.' },
+          { title: 'Measurable Outcomes', description: 'Ensuring execution yields tangible, long-term sustainable growth.' }
         ]}
       />
+      <div style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f0f4f8' }}>
+        <h2>Ready to Elevate Your Business Strategy?</h2>
+        <a href="/contact" style={{ display: 'inline-block', marginTop: '1rem', padding: '0.75rem 1.5rem', backgroundColor: '#0056b3', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontWeight: 'bold' }}>Schedule a Consultation</a>
+      </div>
     </>
   );
 }

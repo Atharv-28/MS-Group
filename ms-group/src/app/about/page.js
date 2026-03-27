@@ -9,28 +9,16 @@ export const metadata = {
 
 const leaders = [
   {
-    name: 'Manoj Gosavi',
-    role: 'Founder & Chairman',
-    bio: 'With over 25 years of global business experience, Manoj drives the overarching strategic vision of MS Group across all three verticals.',
+    name: 'Mr. M. Puri',
+    role: 'Founder',
+    bio: 'Engineer from PICT Pune, Master’s in Management from JBIMS, Mumbai, and Master’s from Rochester Institute of Technology (RIT), USA.',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
   },
   {
-    name: 'Sarah Chen',
-    role: 'Managing Director, ClientWise',
-    bio: 'Former partner at a top-tier consulting firm, Sarah leads the strategic consulting division with unparalleled academic and real-world rigor.',
+    name: 'Ms. S. Puri',
+    role: 'Co-Founder / Architect of Operational Excellence',
+    bio: 'MBA from Christ University, Bangalore; architect of operational excellence.',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
-  },
-  {
-    name: 'David Roberts',
-    role: 'VP Global Operations, Mavenside',
-    bio: 'An authority on international supply chains, David architected Mavenside’s proprietary routing algorithms that serve 140+ countries.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80',
-  },
-  {
-    name: 'Elena Rostova',
-    role: 'CTO, MOXVER',
-    bio: 'Pioneering AI researcher turned tech executive, Elena oversees the development and deployment of enterprise-grade software solutions.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
   },
 ];
 

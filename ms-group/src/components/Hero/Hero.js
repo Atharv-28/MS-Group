@@ -51,7 +51,7 @@ export default function Hero() {
           {/* Subtitle */}
           <p className={styles.subtitle}>
             From strategic consulting and advanced logistics to cutting-edge technology,
-            we architect the future of commerce.
+            MS Group delivers the operational excellence your business needs to scale.
           </p>
 
           {/* CTAs */}

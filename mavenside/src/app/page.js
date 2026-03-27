@@ -12,49 +12,63 @@ export default function MavensidePage() {
       <InternalHero
         badge="Global Logistics"
         badgeColor="gold"
-        title="MAVENSIDE:<br/><em>Seamless Logistics. Global Reach.</em>"
-        subtitle="Connecting markets and delivering promises through advanced routing, secure warehousing, and reliable multimodal transportation."
+        title="MAVENSIDE: <br/><em>Seamless Logistics. Global Reach.</em>"
+        subtitle="End-to-end supply chain optimization, secure warehousing, and reliable transportation solutions designed to keep your business moving forward."
         bgImage=""
         ctaText="Optimize Your Supply Chain"
-        ctaLink="#contact"
+        ctaLink="/contact"
+      />
+
+      {/* Mission Statement */}
+      <InfoSection
+        theme="light"
+        badge="Our Mission"
+        title="Connecting Markets. Delivering Promises."
+        description={[
+          "To deliver seamless, secure, and scalable supply chain solutions that connect businesses to their markets with unparalleled efficiency and reliability."
+        ]}
+        imageSrc=""
+        imageAlt="Mavenside Mission"
+        features={[]}
+      />
+
+      {/* Core Services */}
+      <InfoSection
+        theme="dark"
+        imageLeft={true}
+        badge="Core Services"
+        title="Advanced Logistics & Securing Supply Chain"
+        description={[
+          "Our integrated global logistics and supply chain management solutions are designed to optimize every touchpoint of your product's journey from origin to destination."
+        ]}
+        imageSrc=""
+        imageAlt="Logistics Services"
+        features={[
+          { title: 'Advanced Logistics & Supply Chain Management', description: 'End-to-End Optimization, Inventory Management, and Global & Domestic Routing.' },
+          { title: 'Secure & Scalable Warehousing', description: 'Strategic Locations, Fulfillment & Distribution, and Safety & Compliance.' },
+          { title: 'Reliable Transportation Services', description: 'Multimodal Freight, Last-Mile Delivery, and Real-Time Tracking.' }
+        ]}
       />
 
       <InfoSection
         theme="light"
-        imageLeft={true}
-        badge="Redefining Movement"
-        title="Connecting Markets. Delivering Promises."
-        subtitle="Mavenside redefined the logistics landscape with high-energy movement and architectural precision."
+        badge="The Edge"
+        title="Why Partner With MAVENSIDE"
         description={[
-          "We don't just move cargo; we move economies with relentless momentum.",
-          "Our integrated global logistics and supply chain management solutions are designed to optimize every touchpoint of your product's journey from origin to destination."
+          "We believe in creating seamless connection points across the global economy."
         ]}
         imageSrc=""
-        imageAlt="Mavenside Warehouse"
+        imageAlt="Mavenside Analytics"
         features={[
-          { title: 'Advanced Logistics', description: 'End-to-End Optimization and intelligent routing systems designed to shave hours off delivery windows through predictive analytics.' },
-          { title: 'Secure Warehousing', description: 'Strategic locations and rapid fulfillment centers across major global hubs, ensuring your inventory is always within reach.' },
-          { title: 'Reliable Transportation', description: 'Multimodal freight and last-mile delivery solutions that prioritize velocity without compromising the safety of your assets.' }
+          { title: 'Unwavering Reliability', description: 'Continuous operations to ensure zero delays and absolute dependability.' },
+          { title: 'Integrated Synergy', description: 'Working in lockstep with your existing operations to amplify performance.' },
+          { title: 'Commitment to Excellence', description: 'State-of-the-art systems built for global scale and security.' }
         ]}
       />
-
-      <InfoSection
-        theme="dark"
-        badge="Global Scale"
-        title="Driving the Future of Flow"
-        description={[
-          "We believe in creating seamless connection points across the global economy.",
-          "Our proprietary technology ecosystem allows unparalleled visibility into your supply chain, preventing bottlenecks before they occur."
-        ]}
-        imageSrc=""
-        imageAlt="Global Shipping Containers"
-        features={[
-          { title: '99.9% Uptime Reliability', description: 'Continuous operations to ensure zero delays.' },
-          { title: '140+ Countries Served', description: 'An integrated international network built for scale.' },
-          { title: '2M+ Square Feet Managed', description: 'State-of-the-art warehousing across three continents.' },
-          { title: '24/7 Real-Time Tracking', description: 'Absolute transparency at every stage of the journey.' }
-        ]}
-      />
+      <div style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f0f4f8' }}>
+        <h2>Ready to Streamline Your Operations?</h2>
+        <a href="/contact" style={{ display: 'inline-block', marginTop: '1rem', padding: '0.75rem 1.5rem', backgroundColor: '#0056b3', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontWeight: 'bold' }}>Optimize Your Supply Chain</a>
+      </div>
     </>
   );
 }

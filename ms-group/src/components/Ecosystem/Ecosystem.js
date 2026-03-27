@@ -8,7 +8,7 @@ const verticals = [
     badgeColor: 'blue',
     title: 'CLIENTWISE',
     description:
-      'Precision-engineered strategic business consulting designed to navigate complex market dynamics and scale operations.',
+      'Strategic Business Consulting. Navigate market complexities with confidence.',
     href: '/clientwise',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
     imageAlt: 'Business Consulting - ClientWise',
@@ -19,7 +19,7 @@ const verticals = [
     badgeColor: 'gold',
     title: 'MAVENSIDE',
     description:
-      'Integrated global logistics and supply chain management solutions that optimize every touchpoint of your product journey.',
+      'Global Logistics & Supply Chain. The operational backbone of your business.',
     href: '/mavenside',
     image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
     imageAlt: 'Logistics Warehouse - Mavenside',
@@ -30,7 +30,7 @@ const verticals = [
     badgeColor: 'green',
     title: 'MOXVER',
     description:
-      'Pioneering technology solutions ranging from enterprise software to disruptive AI built to future-proof your digital presence.',
+      'Innovative Technology Solutions. Future-proof your operations.',
     href: '/moxver',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
     imageAlt: 'Technology Innovation - MOXVER',
