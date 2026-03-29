@@ -77,7 +77,7 @@ export default function Footer() {
             <h3 className={styles.linkGroupTitle}>Company</h3>
             <ul className={styles.linkList}>
               <li><Link href="/careers" className={styles.footerLink}>Careers</Link></li>
-              <li><Link href="/about#leadership" className={styles.footerLink}>Leadership</Link></li>
+              <li><Link href="/leadership" className={styles.footerLink}>Leadership</Link></li>
               <li><Link href="/press" className={styles.footerLink}>Press Release</Link></li>
             </ul>
           </div>

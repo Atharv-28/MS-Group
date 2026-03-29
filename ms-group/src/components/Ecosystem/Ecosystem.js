@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import styles from './Ecosystem.module.css';
+import maven from '../../assets/Mavenside.png';
+import moxver from '../../assets/MOXVER.png';
 
 const verticals = [
   {
@@ -9,7 +11,7 @@ const verticals = [
     title: 'CLIENTWISE',
     description:
       'Strategic Business Consulting. Navigate market complexities with confidence.',
-    href: '/clientwise',
+    href: 'https://ms-group-v1.vercel.app/',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
     imageAlt: 'Business Consulting - ClientWise',
   },
@@ -20,8 +22,8 @@ const verticals = [
     title: 'MAVENSIDE',
     description:
       'Global Logistics & Supply Chain. The operational backbone of your business.',
-    href: '/mavenside',
-    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
+    href: 'https://ms-group-v2.vercel.app/',
+    image: maven,
     imageAlt: 'Logistics Warehouse - Mavenside',
   },
   {
@@ -31,8 +33,8 @@ const verticals = [
     title: 'MOXVER',
     description:
       'Innovative Technology Solutions. Future-proof your operations.',
-    href: '/moxver',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+    href: 'https://ms-group-v3.vercel.app/',
+    image: moxver,
     imageAlt: 'Technology Innovation - MOXVER',
   },
 ];
@@ -56,7 +58,12 @@ export default function Ecosystem() {
           {verticals.map((v) => (
             <article key={v.id} className={styles.card} id={`vertical-${v.id}`}>
               <div className={styles.cardImage}>
-                <img src={v.image} alt={v.imageAlt} className={styles.img} loading="lazy" />
+                <img
+                  src={typeof v.image === 'string' ? v.image : v.image.src}
+                  alt={v.imageAlt}
+                  className={styles.img}
+                  loading="lazy"
+                />
                 <div className={styles.cardOverlay}></div>
                 <span className={`${styles.badge} ${styles[`badge${v.badgeColor.charAt(0).toUpperCase() + v.badgeColor.slice(1)}`]}`}>
                   {v.badge}
