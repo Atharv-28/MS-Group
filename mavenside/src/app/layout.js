@@ -22,14 +22,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body style={{ margin: 0, display: 'flex', flexDirection: 'column', minHeight: '100vh', fontFamily: 'var(--font-geist-sans)' }}>
-        <header style={{ padding: '1.5rem 2rem', borderBottom: '1px solid #eaeaea', display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#fff', position: 'sticky', top: 0, zIndex: 100 }}>
-          <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 800, color: '#e6a800', letterSpacing: '-0.5px' }}><Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>MAVENSIDE</Link></h1>
-          <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-            <Link href="/" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Home</Link>
-            <Link href="/services" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Services</Link>
-            <Link href="/leadership" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Leadership</Link>
-            <Link href="/contact" style={{ padding: '0.625rem 1.25rem', backgroundColor: '#e6a800', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontWeight: 700, fontSize: '0.9375rem', transition: 'background-color 0.2s' }}>Contact Us</Link>
-          </nav>
+        <header style={{ padding: '1.5rem 0', borderBottom: '1px solid #eaeaea', backgroundColor: '#fff', position: 'sticky', top: 0, zIndex: 100 }}>
+          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 800, color: '#e6a800', letterSpacing: '-0.5px' }}><Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>MAVENSIDE</Link></h1>
+            <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+              <Link href="/" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Home</Link>
+              <Link href="/services" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Services</Link>
+              <Link href="/leadership" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Leadership</Link>
+              <Link href="/contact" style={{ padding: '0.625rem 1.25rem', backgroundColor: '#e6a800', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontWeight: 700, fontSize: '0.9375rem', transition: 'background-color 0.2s' }}>Contact Us</Link>
+            </nav>
+          </div>
         </header>
 
         <main style={{ flex: 1 }}>{children}</main>
