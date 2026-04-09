@@ -21,7 +21,7 @@ export default function ContactPage() {
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Reach Out</h2>
         <p style={{ marginBottom: '0.5rem' }}><strong>Email:</strong> tracking@mavenside.msgroup.cc</p>
         <p style={{ marginBottom: '0.5rem' }}><strong>Phone:</strong> +91 800 123 4568</p>
-        <p style={{ marginBottom: '2rem' }}><strong>Headquarters:</strong> MS Group Tower, HSR Layout, Sector 2, Bangalore, India</p>
+        <p style={{ marginBottom: '2rem' }}><strong>Headquarters:</strong><br/>MS Group Tower, 45th Avenue<br/>HSR Layout, Sector 2<br/>Bangalore, Karnataka 560102<br/>India</p>
         
         <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <input type="text" placeholder="Your Name" style={{ padding: '0.75rem', border: '1px solid #ccc', borderRadius: '4px' }} />
