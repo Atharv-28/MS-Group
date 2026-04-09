@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './Ecosystem.module.css';
 import maven from '../../assets/Mavenside.png';
 import moxver from '../../assets/MOXVER.png';
+import clientwise from '../../assets/Clientwise.png';
 
 const verticals = [
   {
@@ -10,9 +11,9 @@ const verticals = [
     badgeColor: 'blue',
     title: 'CLIENTWISE',
     description:
-      'Strategic Business Consulting. Navigate market complexities with confidence.',
+      'Strategic business consulting and precision auditing for enterprise growth. From corporate strategy and operational excellence to risk, compliance, and change management, ClientWise delivers actionable blueprints that scale performance.',
     href: 'https://ms-group-v1.vercel.app/',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+    image: clientwise,
     imageAlt: 'Business Consulting - ClientWise',
   },
   {
@@ -21,7 +22,7 @@ const verticals = [
     badgeColor: 'gold',
     title: 'MAVENSIDE',
     description:
-      'Global Logistics & Supply Chain. The operational backbone of your business.',
+      'Integrated logistics and supply chain solutions built for reliability at scale. Mavenside combines intelligent routing, secure warehousing, multimodal transport, and real-time visibility to optimize every movement from origin to destination.',
     href: 'https://ms-group-v2.vercel.app/',
     image: maven,
     imageAlt: 'Logistics Warehouse - Mavenside',
@@ -32,7 +33,7 @@ const verticals = [
     badgeColor: 'green',
     title: 'MOXVER',
     description:
-      'Innovative Technology Solutions. Future-proof your operations.',
+      'Technology solutions engineered to accelerate digital transformation. MOXVER covers web and growth experiences, specialized enterprise software, cloud and security modernization, and AI-driven automation to future-proof operations.',
     href: 'https://ms-group-v3.vercel.app/',
     image: moxver,
     imageAlt: 'Technology Innovation - MOXVER',
