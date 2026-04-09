@@ -65,7 +65,7 @@ export default function ClientwisePage() {
         ]}
       />
       <div style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f0f4f8' }}>
-        <h2>Ready to Elevate Your Business Strategy?</h2>
+        <h2 style={{ color: '#0a1628' }}>Ready to Elevate Your Business Strategy?</h2>
         <a href="/contact" style={{ display: 'inline-block', marginTop: '1rem', padding: '0.75rem 1.5rem', backgroundColor: '#0056b3', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontWeight: 'bold' }}>Schedule a Consultation</a>
       </div>
     </>

@@ -66,7 +66,7 @@ export default function MavensidePage() {
         ]}
       />
       <div style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f0f4f8' }}>
-        <h2>Ready to Streamline Your Operations?</h2>
+        <h2 style={{ color: '#0a1628' }}>Ready to Streamline Your Operations?</h2>
         <a href="/contact" style={{ display: 'inline-block', marginTop: '1rem', padding: '0.75rem 1.5rem', backgroundColor: '#0056b3', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontWeight: 'bold' }}>Optimize Your Supply Chain</a>
       </div>
     </>
