@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
+import Image from 'next/image';
+import navLogo from '@/assets/nav-logo.png';
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -40,7 +42,7 @@ export default function Navbar({ variant = 'default' }) {
       <div className={styles.container}>
         {/* Logo */}
         <Link href="/" className={styles.logo} aria-label="MS Group Home">
-          <span className={styles.logoText}>MS Group</span>
+          <Image src={navLogo} alt="MS Group" className={styles.logoImage} width={600} height={120} unoptimized style={{ height: '100%', width: 'auto' }} />
         </Link>
 
         {/* Desktop Nav */}

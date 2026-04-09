@@ -17,14 +17,20 @@ export const metadata = {
 };
 
 import Link from 'next/link';
+import Image from 'next/image';
+import navlogo from '@/assets/navlogo.png';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body style={{ margin: 0, display: 'flex', flexDirection: 'column', minHeight: '100vh', fontFamily: 'var(--font-geist-sans)' }}>
-        <header style={{ padding: '1.5rem 0', borderBottom: '1px solid #eaeaea', backgroundColor: '#fff', position: 'sticky', top: 0, zIndex: 100 }}>
-          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 800, color: '#0056b3', letterSpacing: '-0.5px' }}><Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>CLIENTWISE</Link></h1>
+        <header style={{ height: '72px', borderBottom: '1px solid #eaeaea', backgroundColor: '#fff', position: 'sticky', top: 0, zIndex: 100 }}>
+          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '100%' }}>
+            <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 800, color: '#0056b3', letterSpacing: '-0.5px', height: '100%', display: 'flex', alignItems: 'center' }}>
+              <Link href="/" style={{ textDecoration: 'none', color: 'inherit', display: 'inline-flex', alignItems: 'center', height: '100%' }}>
+                <Image src={navlogo} alt="ClientWise" width={600} height={120} unoptimized style={{ height: '100%', width: 'auto' }} />
+              </Link>
+            </h1>
             <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
               <Link href="/" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Home</Link>
               <Link href="/services" style={{ textDecoration: 'none', color: '#1a202c', fontWeight: 600, fontSize: '0.9375rem', transition: 'color 0.2s' }}>Services</Link>
