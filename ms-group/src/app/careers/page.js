@@ -62,7 +62,7 @@ export default function CareersPage() {
           <div className={styles.bottomCTA}>
             <h3 className={styles.bottomTitle}>Don't see a perfect fit?</h3>
             <p className={styles.bottomDesc}>Send your resume to our talent acquisition team and we'll reach out when a matching role opens.</p>
-            <a href="mailto:careers@msgroup.cc" className={styles.bottomBtn}>Send Resume</a>
+            <a href="mailto:founder@msgroup.cc" className={styles.bottomBtn}>Send Resume</a>
           </div>
         </div>
       </section>

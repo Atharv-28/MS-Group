@@ -30,13 +30,9 @@ export default function ContactPage() {
                   India
                 </p>
                 <div className={styles.contactMethods}>
-                  <a href="mailto:info@msgroup.cc" className={styles.contactLink}>
+                  <a href="mailto:founder@msgroup.cc" className={styles.contactLink}>
                     <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    info@msgroup.cc
-                  </a>
-                  <a href="tel:+918001234567" className={styles.contactLink}>
-                    <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.02-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    +91 800 123 4567
+                    founder@msgroup.cc
                   </a>
                 </div>
               </div>
@@ -46,15 +42,15 @@ export default function ContactPage() {
                 <div className={styles.branchList}>
                   <div className={styles.branch}>
                     <h4>Mumbai</h4>
-                    <p>BKC Drive, Bandra East<br/>+91 220 987 6543</p>
+                    <p>BKC Drive, Bandra East</p>
                   </div>
                   <div className={styles.branch}>
                     <h4>New York</h4>
-                    <p>One World Trade Center<br/>+1 212 555 0198</p>
+                    <p>One World Trade Center</p>
                   </div>
                   <div className={styles.branch}>
                     <h4>London</h4>
-                    <p>Canary Wharf, 1 Canada Sq<br/>+44 20 7123 4567</p>
+                    <p>Canary Wharf, 1 Canada Sq</p>
                   </div>
                 </div>
               </div>
@@ -81,10 +77,7 @@ export default function ContactPage() {
                     <label>Email Address</label>
                     <input type="email" placeholder="john@company.com" required />
                   </div>
-                  <div className={styles.inputGroup}>
-                    <label>Phone Number</label>
-                    <input type="tel" placeholder="+1 234 567 8900" />
-                  </div>
+                  
                   <div className={`${styles.inputGroup} ${styles.fullWidth}`}>
                     <label>Area of Interest</label>
                     <select required defaultValue="">

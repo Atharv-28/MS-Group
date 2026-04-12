@@ -21,8 +21,7 @@ export default function ContactPage() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'start' }}>
           <div style={{ padding: '0.5rem 0' }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#f8fafc' }}>Reach Out</h2>
-            <p style={{ marginBottom: '0.5rem' }}><strong>Email:</strong> tech@moxver.msgroup.cc</p>
-            <p style={{ marginBottom: '0.5rem' }}><strong>Phone:</strong> +91 800 123 4569</p>
+            <p style={{ marginBottom: '0.5rem' }}><strong>Email:</strong> founder@msgroup.cc</p>
             <p style={{ marginBottom: 0 }}><strong>Headquarters:</strong><br/>MS Group Tower, 45th Avenue<br/>HSR Layout, Sector 2<br/>Bangalore, Karnataka 560102<br/>India</p>
           </div>
 
