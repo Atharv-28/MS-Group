@@ -100,7 +100,18 @@
   font-size: 1rem;
 }
 
+.jobAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .applyBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1;
   flex-shrink: 0;
   padding: 0.875rem 1.75rem;
   background: transparent;
@@ -112,6 +123,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: all 0.2s ease;
+  z-index: 1;
 }
 
 .jobCard:hover .applyBtn,
@@ -157,6 +169,59 @@
 
 .bottomBtn:hover {
   background: var(--color-red, #c0392b);
+}
+
+.domainList {
+  margin-top: 0.75rem;
+  color: var(--color-text-secondary, #4a5268);
+  font-size: 0.95rem;
+}
+
+.requirements {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+  color: var(--color-text-secondary, #4a5268);
+  font-size: 0.95rem;
+}
+
+.requirements li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.qualification {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--color-navy, #0a1628);
+}
+
+.preferredBlock {
+  margin-top: 0.75rem;
+}
+
+.applyList {
+  margin: 1rem 0 1.25rem 1.25rem;
+  color: var(--color-text-secondary, #4a5268);
+}
+
+.offers {
+  margin-top: 2.25rem;
+}
+
+.offerList {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.offerItem {
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(10,22,40,0.04);
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
