@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from '@/components/Navbar/Navbar';
+import PolicyModal from '@/components/PolicyModal/PolicyModal';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body style={{ margin: 0, display: 'flex', flexDirection: 'column', minHeight: '100vh', fontFamily: 'var(--font-geist-sans)' }}>
         <Navbar />
+        <PolicyModal />
 
         <main style={{ flex: 1 }}>{children}</main>
 
