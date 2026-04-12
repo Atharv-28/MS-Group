@@ -2,16 +2,13 @@ import Link from 'next/link';
 import styles from './Footer.module.css';
 
 const verticals = [
-  { label: 'ClientWise Consulting', href: '/clientwise' },
+  { label: 'ClientWise Consulting', href: 'https://clientwise.msgroup.cc/' },
   { label: 'Mavenside Logistics', href: '/mavenside' },
-  { label: 'MOXVER Technology', href: '/moxver' },
+  { label: 'MOXVER Technology', href: 'https://moxver.msgroup.cc/' },
 ];
 
 const company = [
   { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms of Service', href: '/terms' },
-  { label: 'Cookie Policy', href: '/cookies' },
-  { label: 'Sitemap', href: '/sitemap' },
 ];
 
 export default function Footer() {
@@ -55,7 +52,6 @@ export default function Footer() {
             <ul className={styles.linkList}>
               <li><Link href="/careers" className={styles.footerLink}>Careers</Link></li>
               <li><Link href="/leadership" className={styles.footerLink}>Leadership</Link></li>
-              <li><Link href="/press" className={styles.footerLink}>Press Release</Link></li>
             </ul>
           </div>
 

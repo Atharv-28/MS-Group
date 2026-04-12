@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export', // Static export for Hostinger deployment
   reactCompiler: true,
+  trailingSlash: true, // Ensure trailing slashes for static export
   images: {
     unoptimized: true,
   },
