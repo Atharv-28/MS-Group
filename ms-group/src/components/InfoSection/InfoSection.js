@@ -19,12 +19,14 @@ export default function InfoSection({
         <div className={`${styles.grid} ${imageLeft ? styles.imageLeft : ''}`}>
           
           {/* Image */}
+          {imageSrc ? (
           <div className={styles.imageCol}>
             <div className={styles.imageWrapper}>
-              <img src={imageSrc} alt={imageAlt} className={styles.image} loading="lazy" />
+              <img src={imageSrc} alt={imageAlt || ''} className={styles.image} loading="lazy" />
               <div className={styles.imageOverlay}></div>
             </div>
           </div>
+          ) : null}
 
           {/* Content */}
           <div className={styles.contentCol}>

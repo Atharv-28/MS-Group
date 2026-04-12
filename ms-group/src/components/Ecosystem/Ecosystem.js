@@ -12,7 +12,7 @@ const verticals = [
     title: 'CLIENTWISE',
     description:
       'Strategic business consulting and precision auditing for enterprise growth. From corporate strategy and operational excellence to risk, compliance, and change management, ClientWise delivers actionable blueprints that scale performance.',
-    href: 'https://ms-group-v1.vercel.app/',
+    href: 'https://clientwise.msgroup.cc/',
     image: clientwise,
     imageAlt: 'Business Consulting - ClientWise',
   },
@@ -23,7 +23,7 @@ const verticals = [
     title: 'MAVENSIDE',
     description:
       'Integrated logistics and supply chain solutions built for reliability at scale. Mavenside combines intelligent routing, secure warehousing, multimodal transport, and real-time visibility to optimize every movement from origin to destination.',
-    href: 'https://ms-group-v2.vercel.app/',
+    href: '/mavenside',
     image: maven,
     imageAlt: 'Logistics Warehouse - Mavenside',
   },
@@ -34,7 +34,7 @@ const verticals = [
     title: 'MOXVER',
     description:
       'Technology solutions engineered to accelerate digital transformation. MOXVER covers web and growth experiences, specialized enterprise software, cloud and security modernization, and AI-driven automation to future-proof operations.',
-    href: 'https://ms-group-v3.vercel.app/',
+    href: 'https://moxver.msgroup.cc/',
     image: moxver,
     imageAlt: 'Technology Innovation - MOXVER',
   },

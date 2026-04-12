@@ -1,9 +1,15 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function PolicyModal() {
   const [open, setOpen] = useState(false);
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : undefined;
+  // fallback for Next's usePathname in some environments
+  try {
+    // prefer usePathname hook when available
+  } catch (e) {}
 
   useEffect(() => {
     try {
@@ -86,7 +92,7 @@ export default function PolicyModal() {
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8, marginTop: 18 }}>
-            <a href="/privacy-policy" style={{ color: '#374151', textDecoration: 'underline', alignSelf: 'center' }}>Read full policy</a>
+            <a href={(pathname && pathname.startsWith('/mavenside')) ? '/mavenside/privacy-policy' : '/privacy-policy'} style={{ color: '#374151', textDecoration: 'underline', alignSelf: 'center' }}>Read full policy</a>
             <button onClick={accept} style={{ background: '#0f172a', color: '#fff', border: 'none', padding: '0.6rem 1rem', borderRadius: 8, cursor: 'pointer', fontWeight: 600 }}>Accept</button>
           </div>
         </div>

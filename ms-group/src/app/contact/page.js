@@ -36,24 +36,7 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
-
-              <div className={styles.branches}>
-                <h3 className={styles.branchesTitle}>Global Branches</h3>
-                <div className={styles.branchList}>
-                  <div className={styles.branch}>
-                    <h4>Mumbai</h4>
-                    <p>BKC Drive, Bandra East</p>
-                  </div>
-                  <div className={styles.branch}>
-                    <h4>New York</h4>
-                    <p>One World Trade Center</p>
-                  </div>
-                  <div className={styles.branch}>
-                    <h4>London</h4>
-                    <p>Canary Wharf, 1 Canada Sq</p>
-                  </div>
-                </div>
-              </div>
+              {/* Global Branches section removed */}
             </div>
 
             {/* Right: Form */}

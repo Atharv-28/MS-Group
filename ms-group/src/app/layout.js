@@ -1,7 +1,7 @@
 import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/Navbar/Navbar';
-import Footer from '@/components/Footer/Footer';
+import ConditionalNav from '@/components/ConditionalNav/ConditionalNav';
+import ConditionalFooter from '@/components/ConditionalFooter/ConditionalFooter';
 import PolicyModal from '@/components/PolicyModal/PolicyModal';
 
 const inter = Inter({
@@ -28,12 +28,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`} data-scroll-behavior="smooth">
       <body>
-        <Navbar />
+        <ConditionalNav />
         <PolicyModal />
         <main>{children}</main>
-        <Footer />
+        <ConditionalFooter />
       </body>
     </html>
   );
