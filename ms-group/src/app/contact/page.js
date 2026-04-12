@@ -2,6 +2,7 @@
 
 import InternalHero from '@/components/InternalHero/InternalHero';
 import styles from './contact.module.css';
+import meetingRoom from '@/assets/Meeting Room1.png';
 
 export default function ContactPage() {
   return (
@@ -11,7 +12,7 @@ export default function ContactPage() {
         badgeColor="gold"
         title="Reach Out.<br/><em>Let's Build the Future.</em>"
         subtitle="Our global team is ready to discuss how MS Group can architect solutions for your most pressing business challenges."
-        bgImage="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80"
+        bgImage={meetingRoom}
       />
       
       <section className={styles.contact}>

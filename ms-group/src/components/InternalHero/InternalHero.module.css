@@ -11,11 +11,12 @@
   position: absolute;
   inset: 0;
   background-size: contain;
-  background-position: right center;
+  background-position: 91% center;
   background-repeat: no-repeat;
-  opacity: 0.5;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 35%, rgba(0, 0, 0, 1) 60%);
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 35%, rgba(0, 0, 0, 1) 60%);
+  opacity: 0.55;
+  /* Softer left dissolve so image isn't overly right-anchored */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 1) 55%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 1) 55%);
   transform: scale(1.05);
   animation: slowPan 30s ease-in-out infinite alternate;
 }
