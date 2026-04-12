@@ -10,10 +10,12 @@
 .bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: right center;
   background-repeat: no-repeat;
   opacity: 0.5;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 35%, rgba(0, 0, 0, 1) 60%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 35%, rgba(0, 0, 0, 1) 60%);
   transform: scale(1.05);
   animation: slowPan 30s ease-in-out infinite alternate;
 }

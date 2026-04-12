@@ -20,12 +20,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer} id="footer">
       <div className={styles.container}>
-        {/* Pre-footer CTA */}
-        <div className={styles.cta}>
-          <h2>Ready to Transform Your Business?</h2>
-          <p>Partner with MS Group to unlock your organization's full potential.</p>
-          <Link href="/contact" className={styles.ctaBtn}>Contact Us</Link>
-        </div>
         
         {/* Top section */}
         <div className={styles.top}>

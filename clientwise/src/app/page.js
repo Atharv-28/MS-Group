@@ -1,5 +1,6 @@
 import InternalHero from '@/components/InternalHero/InternalHero';
 import InfoSection from '@/components/InfoSection/InfoSection';
+import meetingRoom from '@/assets/Conference Room - Clientwise.png';
 
 export const metadata = {
   title: 'ClientWise',
@@ -14,7 +15,7 @@ export default function ClientwisePage() {
         badgeColor="blue"
         title="CLIENTWISE: <br/><em>Strategic Consulting & Precision Auditing.</em>"
         subtitle="Empowering your organization with actionable insights, optimized processes, and robust compliance frameworks to drive sustainable market leadership."
-        bgImage=""
+        bgImage={meetingRoom}
         ctaText="Schedule a Consultation"
         ctaLink="/contact"
       />

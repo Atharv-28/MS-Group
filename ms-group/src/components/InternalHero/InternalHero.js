@@ -11,12 +11,14 @@ export default function InternalHero({
   ctaText,
   ctaLink,
 }) {
+  const resolvedBgImage = typeof bgImage === 'string' ? bgImage : bgImage?.src;
+
   return (
     <section className={styles.hero}>
       {/* Background */}
       <div 
         className={styles.bg} 
-        style={{ backgroundImage: `url(${bgImage})` }}
+        style={resolvedBgImage ? { backgroundImage: `url("${resolvedBgImage}")` } : undefined}
       ></div>
       <div className={styles.overlay}></div>
       <div className={styles.gridOverlay}></div>

@@ -17,6 +17,7 @@ export default function ContactPage() {
         ctaText="View Services"
         ctaLink="/services"
       />
+      
       <section style={{ maxWidth: '1280px', margin: '4rem auto', padding: '0 2rem', color: '#e5e7eb' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'start' }}>
           <div style={{ padding: '0.5rem 0' }}>

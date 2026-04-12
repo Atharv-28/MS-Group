@@ -1,5 +1,6 @@
 import InternalHero from '@/components/InternalHero/InternalHero';
 import InfoSection from '@/components/InfoSection/InfoSection';
+import meetingRoom from '@/assets/Meeting Room Moxver.png';
 
 export const metadata = {
   title: 'MOXVER',
@@ -14,7 +15,7 @@ export default function MoxverPage() {
         badgeColor="red"
         title="MOXVER: <br/><em>Driving Digital Transformation.</em>"
         subtitle="Empowering your business with custom web design, targeted digital marketing, and specialized software solutions designed for the modern enterprise."
-        bgImage=""
+        bgImage={meetingRoom}
         ctaText="Accelerate Your Digital Journey"
         ctaLink="/contact"
       />

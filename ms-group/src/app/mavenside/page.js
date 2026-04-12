@@ -1,6 +1,7 @@
 import InternalHero from '@/components/InternalHero/InternalHero';
 import InfoSection from '@/components/InfoSection/InfoSection';
 import Link from 'next/link';
+import meetingRoom from '@/assets/Meeting Room Mavenside.png';
 
 export const metadata = {
   title: 'Mavenside',
@@ -15,7 +16,7 @@ export default function MavensidePage() {
         badgeColor="gold"
         title="MAVENSIDE: <br/><em>Seamless Logistics. Global Reach.</em>"
         subtitle="End-to-end supply chain optimization, secure warehousing, and reliable transportation solutions designed to keep your business moving forward."
-        bgImage=""
+        bgImage={meetingRoom}
         ctaText="Optimize Your Supply Chain"
         ctaLink="/mavenside/contact"
       />
