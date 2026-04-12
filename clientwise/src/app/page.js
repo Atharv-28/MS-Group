@@ -2,7 +2,7 @@ import InternalHero from '@/components/InternalHero/InternalHero';
 import InfoSection from '@/components/InfoSection/InfoSection';
 
 export const metadata = {
-  title: 'ClientWise | MS Group Consulting',
+  title: 'ClientWise',
   description: 'Precision-engineered strategic business consulting designed to navigate complex market dynamics and scale operations.',
 };
 

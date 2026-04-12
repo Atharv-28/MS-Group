@@ -2,7 +2,7 @@ import InternalHero from '@/components/InternalHero/InternalHero';
 import InfoSection from '@/components/InfoSection/InfoSection';
 
 export const metadata = {
-  title: 'MOXVER | MS Group Technology',
+  title: 'MOXVER',
   description: 'Pioneering technology solutions ranging from enterprise software to disruptive AI, built to future-proof your digital presence.',
 };
 

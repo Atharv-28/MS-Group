@@ -2,7 +2,7 @@ import InternalHero from '@/components/InternalHero/InternalHero';
 import InfoSection from '@/components/InfoSection/InfoSection';
 
 export const metadata = {
-  title: 'Mavenside | MS Group Logistics',
+  title: 'Mavenside',
   description: 'Integrated global logistics and supply chain management solutions that optimize every touchpoint of your product journey.',
 };
 
